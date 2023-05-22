@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Teste';
+    src:url('fontes/Akira\ Expanded\ Demo.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Desenho';
+    src:url('fontes/biscuitkidsDEMO.otf') format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 200px;
+    max-height: 600px;
+    min-height: 300px;
+}
+
+header > h1{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    font-family: 'Teste';
+}
+
+header > h2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Teste';
+
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    border-radius: 8px;
+    
+}
+
+main >p{
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    max-width: 1000px;
+    min-width: 400px;
+}
+
+main > h1{
+    background-image: linear-gradient(to right,#5fcdd99f,rgba(72, 143, 190, 0.274));
+    margin-left: -5px;
+    padding: 5px;
+    margin-right: -5px;
+    color: #172026;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 25px;
+    
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2013/10/13/20/36/star-195187_1280.jpg);
+
+}
+
+div >h2{
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: linear-gradient(to right,#5fcdd99f,rgba(72, 143, 190, 0.274));
+    margin-left: -5px;
+    padding: 5px;
+    margin-right: -5px;
+    color: #172026;
+    padding-left: 25px;
+}
+
+div >p{
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+#card{
+    justify-content: center;
+    display: flex;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    position: absolute;
+    margin-left: 20%;
+    
+    
+    
+}
+
+#card2{
+    justify-content: center;
+    display: flex;
+    transform-style: preserve-3d;
+    transition: all .5s;
+    margin-left: 50%;
+
+    
+    
+    
+}
+
+
+
+
+
+.face{
+    width: 185px;
+    height: 185px;
+    
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#front{
+    transform: rotateY(180deg);
+    background-color: #72acc5;
+    margin-top: 50px;
+    
+    position: absolute;
+    font-family: 'Desenho';
+    
+}
+
+#front2{
+    transform: rotateY(180deg);
+    background-color: #72acc5;
+    margin-top: 50px;
+    
+    position: absolute;
+    font-family: 'Desenho';
+
+    
+}
+
+
+
+
+#back{
+    backface-visibility: hidden; 
+    margin-top: 50px;
+    position: absolute;
+    
+}
+
+#back2{
+    backface-visibility: hidden; 
+    margin-top: 50px;
+    position: absolute;
+}
+
+
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+#card:hover{
+    cursor: pointer;
+}
+
+#card2:hover{
+    cursor: pointer;
+}
+
+
+
